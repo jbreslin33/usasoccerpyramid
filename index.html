@@ -23,7 +23,25 @@ tr:nth-child(even) {
 </head>
 <body>
 
+<script>
+function toggleCasa() 
+{
+	var checkBox = document.getElementById("casa_checkbox");
+  	var div = document.getElementById("casa_div");
+  	if (checkBox.checked == true)
+	{
+    		div.style.display = "block";
+  	} 
+	else 
+	{
+     		div.style.display = "none";
+  	}
+}
+</script>
+
 <h2>Open United States Soccer Pyramid 330 Clubs</h2>
+
+<input type="checkbox" id="casa_checkbox" name="casa_checkbox" onclick="toggleCasa('div1')"> Show Casa Soccer 
 
 <table>
 	<tr>
@@ -359,7 +377,7 @@ tr:nth-child(even) {
     	<td></td> <!--Mountain-->
     	<td></td> <!--Carolina-->
     	<td>
-		<div style="text-align: center;">
+		<div id="casa_div" style="text-align: center;">
 			<div style="display: inline-block; text-align: left;">
 				<b>Casa Soccer League Primera Division </b><br> 
 				<i>Standings:</i><br>
